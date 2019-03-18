@@ -9,8 +9,10 @@ const StyledDiv = styled.div`
 
 const ClassRoom = (props) => {
   return (
+    
     <StyledDiv>
       <h3>{`Welcome to class: ${props.className}`}</h3>
+      <div>{props.children}</div>
     </StyledDiv>
   );
 };
@@ -21,3 +23,7 @@ ClassRoom.propTypes = {
 };
 
 export default ClassRoom;
+
+
+
+
